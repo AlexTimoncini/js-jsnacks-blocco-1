@@ -4,7 +4,7 @@
 
 let numberList = [];
 let sum = 0;
-for (let i = 0; i <= 10; i++){
+for (let i = 0; i < 10; i++){
     let userNumber = parseInt(prompt('Insert a random number'));
     numberList.push(userNumber);
     sum += userNumber;
