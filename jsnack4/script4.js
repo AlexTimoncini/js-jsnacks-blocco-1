@@ -6,6 +6,11 @@ let userNumber = prompt('insert a 4-digit number!');
 
 if(userNumber.length != 4){
     console.log('Wrong Number, Must have 4-digit!');
+    userNumber = prompt('Please, insert a 4-digit number!');
 } else {
-    console.log(parseInt(userNumber.substring(0, 1)) + parseInt(userNumber.substring(1, 2)) + parseInt(userNumber.substring(2, 3)) + parseInt(userNumber.substring(3)))
+    let sum = 0;
+    for (let i = 0; i < userNumber.length; i++){
+        sum += parseInt(userNumber.charAt(i));
+    }
+    console.log(sum);
 }
